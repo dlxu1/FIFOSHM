@@ -19,7 +19,7 @@ void shmfifo_put(shmfifo *fifo, const void *buf)；
 void shmfifo_get(shmfifo *fifo, void *buf);
 和写入接口使用方法相同
 
- 销毁 
+销毁共享内存 
 void shmfifo_destroy(shmfifo *fifo);
 
 
