@@ -11,14 +11,15 @@ shmfifo* shmfifo_init(int key,int blocks, int blksz);
 （4）返回值为一个结构体，在进行数据读写时当入参。
 
 向共享内存写数据
-void shmfifo_put(shmfifo *fifo, const void *buf)
+void shmfifo_put(shmfifo *fifo, const void *buf)；
 (1)fifo为已经打开的共享内存。
 （2）buf为需要向共享内存写入的数据。
 
-// 取得数据
+取出共享内存数据
 void shmfifo_get(shmfifo *fifo, void *buf);
+和写入接口使用方法相同
 
-// 销毁 
+ 销毁 
 void shmfifo_destroy(shmfifo *fifo);
 
 
